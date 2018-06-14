@@ -6,15 +6,15 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="EtOfwEn0JRfvoWGttcZ8.OYB8PMOuq3DfefrH+iOdga.ngKGrOkp1tvQKmH3TY+raj0Npp99Wq4xYLW+9i22VwU=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(qr=True)
+ki.login(token="EtJAD9suQOlgEL9U8Ge8.2qf6A7/hoLk2aQDSSc4yca.L9lMNdp2DQewGKsWMh5Xrh3RFsTS5UTTaMU7ncaOswY=")
 ki.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(qr=True)
+ki2.login(token="EtPISOJyn2O5Dn65lDm3.kSOqXIyk9xfwzd0tWJc+qW.2dqfa/3tM+l1BisbMX7TtXBff3ApwPUbK5eNqDX78G4=")
 ki2.loginResult()
 
 print "login success plak"
@@ -74,8 +74,8 @@ mid = cl.getProfile().mid
 kimid = ki.getProfile().mid
 ki2mid = ki2.getProfile().mid
 Bots=[mid,kimid,ki2mid]
-owner =["ued156c86ffa56024c0acba16f7889e6d"]
-admin = ["ued156c86ffa56024c0acba16f7889e6d"]
+owner =["ua326fca66a14437745105461fc8a0318"]
+admin = ["ud9017a6bbf873a52b602a76cb02e1808"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -264,9 +264,9 @@ def bot(op):
             if op.param2 not in Bots:
               if op.param2 in Bots:
                 pass
-              elif op.param2 in admin:
+              elif op.param2 in admin:ued156c86ffa56024c0acba16f7889e6d
                 pass
-              elif op.param2 in owner:
+              elif op.param2 in owner:ued156c86ffa56024c0acba16f7889e6d
                 pass
               else:
                 random.choice(KAC).sendText(op.param1, "Jangan Sok Jadi Jagoan Deh Lu Njir.\nAdmin Bukan,Owner Juga Bukan\Kick Ah 😛")
